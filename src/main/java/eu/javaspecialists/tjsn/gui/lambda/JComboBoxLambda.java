@@ -21,25 +21,22 @@ package eu.javaspecialists.tjsn.gui.lambda;
 import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
+import java.util.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
+public class JComboBoxLambda<E> extends JComboBox<E> implements
+        JComponentEventProducerMixin {
+    public JComboBoxLambda(ComboBoxModel<E> aModel) {
+        super(aModel);
     }
 
-    public JButtonLambda(Icon icon) {
-        super(icon);
+    public JComboBoxLambda(E... items) {
+        super(items);
     }
 
-    public JButtonLambda(String text) {
-        super(text);
+    public JComboBoxLambda(Vector<E> items) {
+        super(items);
     }
 
-    public JButtonLambda(Action a) {
-        super(a);
-    }
-
-    public JButtonLambda(String text, Icon icon) {
-        super(text, icon);
+    public JComboBoxLambda() {
     }
 }

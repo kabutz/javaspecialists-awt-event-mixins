@@ -22,24 +22,36 @@ import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
+public class JCheckBoxLambda extends JCheckBox implements
+        JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
+    public JCheckBoxLambda() {
     }
 
-    public JButtonLambda(Icon icon) {
+    public JCheckBoxLambda(Icon icon) {
         super(icon);
     }
 
-    public JButtonLambda(String text) {
+    public JCheckBoxLambda(Icon icon, boolean selected) {
+        super(icon, selected);
+    }
+
+    public JCheckBoxLambda(String text) {
         super(text);
     }
 
-    public JButtonLambda(Action a) {
+    public JCheckBoxLambda(Action a) {
         super(a);
     }
 
-    public JButtonLambda(String text, Icon icon) {
+    public JCheckBoxLambda(String text, boolean selected) {
+        super(text, selected);
+    }
+
+    public JCheckBoxLambda(String text, Icon icon) {
         super(text, icon);
+    }
+
+    public JCheckBoxLambda(String text, Icon icon, boolean selected) {
+        super(text, icon, selected);
     }
 }

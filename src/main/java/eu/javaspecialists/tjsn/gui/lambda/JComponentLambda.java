@@ -22,24 +22,8 @@ import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
-    }
-
-    public JButtonLambda(Icon icon) {
-        super(icon);
-    }
-
-    public JButtonLambda(String text) {
-        super(text);
-    }
-
-    public JButtonLambda(Action a) {
-        super(a);
-    }
-
-    public JButtonLambda(String text, Icon icon) {
-        super(text, icon);
+public class JComponentLambda extends JComponent
+        implements JComponentEventProducerMixin {
+    public JComponentLambda() {
     }
 }

@@ -1,0 +1,1895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8fc18901-f423-4491-8fd1-69466b6eda44" name="Default" comment="Added JComponent mixins for event listeners&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .gitignore&#10;#&#9;new file:   NOTICE&#10;#&#9;modified:   README.md&#10;#&#9;new file:   javaspecialists-awt-event-mixins.iml&#10;#&#9;new file:   javaspecialists-awt-event-mixins.ipr&#10;#&#9;new file:   pom.xml&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AncestorEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ComponentEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ContainerEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/FocusEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/HierarchyEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/KeyEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionProducerMixin.java&#10;#&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AbstractButtonEventProducerMixin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/componentpallet/ComponentPallet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JCheckBoxLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JComboBoxLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JComponentLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JLabelLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTableLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextAreaLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextFieldLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JTreeEventProducerMixin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTreeLambda.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionEventProducerMixin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/PopupMenuEventProducerMixin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculatorJava2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculatorJava8.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeExpansionEventProducerMixin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeWillExpandEventProducerMixin.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionProducerMixin.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AncestorEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AncestorEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ComponentEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ComponentEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ContainerEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ContainerEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/FocusEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/FocusEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/HierarchyEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/HierarchyEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/KeyEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/KeyEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseEventProducerMixin.java" afterPath="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseEventProducerMixin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javaspecialists-awt-event-mixins.iml" afterPath="$PROJECT_DIR$/javaspecialists-awt-event-mixins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javaspecialists-awt-event-mixins.ipr" afterPath="$PROJECT_DIR$/javaspecialists-awt-event-mixins.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="javaspecialists-awt-event-mixins.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="javaspecialists-awt-event-mixins" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ComponentPallet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/componentpallet/ComponentPallet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="22" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JButtonLambda.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="13" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCheckBoxLambda.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JCheckBoxLambda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="0" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.6322314" vertical-offset="0" max-vertical-offset="968">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTreeLambda.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTreeLambda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="5" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTableLambda.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTableLambda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="13" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTextFieldLambda.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextFieldLambda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="1" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+              <folding>
+                <element signature="method#JTextFieldLambda#0;class#JTextFieldLambda#0" expanded="false" />
+                <element signature="method#JTextFieldLambda#1;class#JTextFieldLambda#0" expanded="false" />
+                <element signature="method#JTextFieldLambda#2;class#JTextFieldLambda#0" expanded="false" />
+                <element signature="method#JTextFieldLambda#3;class#JTextFieldLambda#0" expanded="false" />
+                <element signature="method#JTextFieldLambda#4;class#JTextFieldLambda#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputMethodEventProducerMixin.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="9" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTextAreaLambda.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextAreaLambda.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="39" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTextArea.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JTextArea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="41" selection-start="0" selection-end="27760" vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="13968">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTextComponent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/text/JTextComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="294" column="22" selection-start="11490" selection-end="11490" vertical-scroll-proportion="-12.384615" vertical-offset="3674" max-vertical-offset="88758">
+              <folding>
+                <element signature="e#0#190722#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#17596#17597#0" expanded="false" />
+                <element signature="e#17624#17625#0" expanded="false" />
+                <element signature="e#19704#19705#0" expanded="false" />
+                <element signature="e#19733#19734#0" expanded="false" />
+                <element signature="e#20048#20049#0" expanded="false" />
+                <element signature="e#20089#20090#0" expanded="false" />
+                <element signature="e#20527#20528#0" expanded="false" />
+                <element signature="e#20566#20567#0" expanded="false" />
+                <element signature="e#20744#20745#0" expanded="false" />
+                <element signature="e#20772#20773#0" expanded="false" />
+                <element signature="e#21752#21753#0" expanded="false" />
+                <element signature="e#21786#21787#0" expanded="false" />
+                <element signature="e#25363#25364#0" expanded="false" />
+                <element signature="e#25397#25398#0" expanded="false" />
+                <element signature="e#27057#27058#0" expanded="false" />
+                <element signature="e#27088#27089#0" expanded="false" />
+                <element signature="e#36152#36153#0" expanded="false" />
+                <element signature="e#36187#36188#0" expanded="false" />
+                <element signature="e#39151#39152#0" expanded="false" />
+                <element signature="e#39180#39181#0" expanded="false" />
+                <element signature="e#44194#44210#0" expanded="false" />
+                <element signature="e#46330#46331#0" expanded="false" />
+                <element signature="e#46363#46364#0" expanded="false" />
+                <element signature="e#47111#47112#0" expanded="false" />
+                <element signature="e#47148#47149#0" expanded="false" />
+                <element signature="e#47950#47951#0" expanded="false" />
+                <element signature="e#47990#47991#0" expanded="false" />
+                <element signature="e#48813#48814#0" expanded="false" />
+                <element signature="e#48853#48854#0" expanded="false" />
+                <element signature="e#58803#58804#0" expanded="false" />
+                <element signature="e#58842#58843#0" expanded="false" />
+                <element signature="e#65301#65302#0" expanded="false" />
+                <element signature="e#65332#65333#0" expanded="false" />
+                <element signature="e#86612#87012#0" expanded="false" />
+                <element signature="e#86997#86998#0" expanded="false" />
+                <element signature="e#87091#87099#0" expanded="false" />
+                <element signature="e#87165#90158#0" expanded="false" />
+                <element signature="e#87674#88120#0" expanded="false" />
+                <element signature="e#88085#88086#0" expanded="false" />
+                <element signature="e#89172#89390#0" expanded="false" />
+                <element signature="e#89351#89352#0" expanded="false" />
+                <element signature="e#90143#90144#0" expanded="false" />
+                <element signature="e#97021#97605#0" expanded="false" />
+                <element signature="e#97590#97591#0" expanded="false" />
+                <element signature="e#99385#99605#0" expanded="false" />
+                <element signature="e#99586#99587#0" expanded="false" />
+                <element signature="e#100254#100474#0" expanded="false" />
+                <element signature="e#100455#100456#0" expanded="false" />
+                <element signature="e#101124#101344#0" expanded="false" />
+                <element signature="e#101325#101326#0" expanded="false" />
+                <element signature="e#102581#102582#0" expanded="false" />
+                <element signature="e#102631#102632#0" expanded="false" />
+                <element signature="e#147134#147135#0" expanded="false" />
+                <element signature="e#147170#147171#0" expanded="false" />
+                <element signature="e#147328#147329#0" expanded="false" />
+                <element signature="e#147363#147364#0" expanded="false" />
+                <element signature="e#155527#155528#0" expanded="false" />
+                <element signature="e#155568#155569#0" expanded="false" />
+                <element signature="e#155603#155604#0" expanded="false" />
+                <element signature="e#155636#155637#0" expanded="false" />
+                <element signature="e#159702#159703#0" expanded="false" />
+                <element signature="e#159739#159740#0" expanded="false" />
+                <element signature="e#159794#159795#0" expanded="false" />
+                <element signature="e#159838#159839#0" expanded="false" />
+                <element signature="e#167345#167346#0" expanded="false" />
+                <element signature="e#167379#167380#0" expanded="false" />
+                <element signature="e#167417#167418#0" expanded="false" />
+                <element signature="e#167452#167453#0" expanded="false" />
+                <element signature="e#187255#187495#0" expanded="false" />
+                <element signature="e#187484#187485#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Heinz Kabutz" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculatorJava2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculatorJava8.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/componentpallet/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JLabelLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeExpansionProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeWillExpandProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeExpansionEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeWillExpandEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JComponentLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextFieldLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeSelectionEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JTreeEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTreeLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ActionEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AbstractButtonEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JCheckBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/asdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/PopupMenuEventProducerMixin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JComboBoxLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTableLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextAreaLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/componentpallet/ComponentPallet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JCheckBoxLambda.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2556" />
+    <option name="height" value="1578" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issues</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rt.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaspecialists-awt-event-mixins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mixin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javaspecialists-awt-event-mixins.ipr" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="LayoutCode.rearrangeEntries" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="eu.javaspecialists.tjsn.gui.lambda" />
+      <recent name="eu.javaspecialists.tjsn.gui.lambda.mixin" />
+      <recent name="eu.javaspecialists.tjsn.gui.lambda.samples.salaryincrease" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="eu.javaspecialists.tjsn.gui.lambda.samples.componentpallet" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ComponentPallet">
+    <configuration default="false" name="SalaryIncreaseCalculatorJava2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eu.javaspecialists.tjsn.gui.lambda.samples.salaryincrease.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="eu.javaspecialists.tjsn.gui.lambda.samples.salaryincrease.SalaryIncreaseCalculatorJava2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="javaspecialists-awt-event-mixins" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ComponentPallet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eu.javaspecialists.tjsn.gui.lambda.samples.componentpallet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="eu.javaspecialists.tjsn.gui.lambda.samples.componentpallet.ComponentPallet" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="javaspecialists-awt-event-mixins" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.SalaryIncreaseCalculatorJava2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ComponentPallet" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.ComponentPallet" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SalaryIncreaseCalculatorJava2" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fc18901-f423-4491-8fd1-69466b6eda44" name="Default" comment="" />
+      <created>1393861129259</created>
+      <updated>1393861129259</updated>
+      <workItem from="1393861129963" duration="8440000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8440000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="2556" height="1578" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24542561" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290627" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Added more mixins and some samples to show how they can be used.&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .gitignore&#10;#&#9;new file:   NOTICE&#10;#&#9;modified:   README.md&#10;#&#9;new file:   javaspecialists-awt-event-mixins.iml&#10;#&#9;new file:   javaspecialists-awt-event-mixins.ipr&#10;#&#9;new file:   pom.xml&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AncestorEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ComponentEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ContainerEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/FocusEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/HierarchyEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/KeyEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionProducerMixin.java&#10;#&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more mixins and some samples to show how they can be used.&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .gitignore&#10;#&#9;new file:   NOTICE&#10;#&#9;modified:   README.md&#10;#&#9;new file:   javaspecialists-awt-event-mixins.iml&#10;#&#9;new file:   javaspecialists-awt-event-mixins.ipr&#10;#&#9;new file:   pom.xml&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AncestorEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ComponentEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ContainerEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/FocusEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/HierarchyEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/KeyEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseEventProducerMixin.java&#10;#&#9;new file:   src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionProducerMixin.java&#10;#&#10;" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/event/TreeWillExpandListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="17" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding>
+            <element signature="e#0#1080#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="13" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="15462">
+          <folding>
+            <element signature="e#0#27288#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#24316#24317#0" expanded="false" />
+            <element signature="e#24347#24348#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/util/EventObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
+          <folding>
+            <element signature="e#0#1611#0" expanded="false" />
+            <element signature="e#1329#1330#0" expanded="false" />
+            <element signature="e#1358#1359#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/AWTEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="44" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="10584">
+          <folding>
+            <element signature="e#0#20096#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#8070#9290#0" expanded="false" />
+            <element signature="e#9263#9264#0" expanded="false" />
+            <element signature="e#11604#11605#0" expanded="false" />
+            <element signature="e#11629#11630#0" expanded="false" />
+            <element signature="e#13455#13456#0" expanded="false" />
+            <element signature="e#13486#13487#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/event/ComponentEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="40" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="2628">
+          <folding>
+            <element signature="e#0#5247#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/event/InputEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="44" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="9036">
+          <folding>
+            <element signature="e#0#18712#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10073#10255#0" expanded="false" />
+            <element signature="e#10240#10241#0" expanded="false" />
+            <element signature="e#14104#14105#0" expanded="false" />
+            <element signature="e#14131#14132#0" expanded="false" />
+            <element signature="e#16348#16349#0" expanded="false" />
+            <element signature="e#16379#16380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="36" selection-start="6424" selection-end="6424" vertical-scroll-proportion="0.0" vertical-offset="1892" max-vertical-offset="30006">
+          <folding>
+            <element signature="e#0#65198#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#39152#39153#0" expanded="false" />
+            <element signature="e#39182#39183#0" expanded="false" />
+            <element signature="e#39386#39387#0" expanded="false" />
+            <element signature="e#39424#39425#0" expanded="false" />
+            <element signature="e#40114#40115#0" expanded="false" />
+            <element signature="e#40144#40145#0" expanded="false" />
+            <element signature="e#40399#40400#0" expanded="false" />
+            <element signature="e#40437#40438#0" expanded="false" />
+            <element signature="e#41837#41838#0" expanded="false" />
+            <element signature="e#41871#41872#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AncestorEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+          <folding>
+            <element signature="e#0#1975#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1006#1139#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
+            <element signature="e#1250#1385#0" expanded="false" />
+            <element signature="e#1374#1375#0" expanded="false" />
+            <element signature="e#1494#1627#0" expanded="false" />
+            <element signature="e#1616#1617#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/beans/VetoableChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="17" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="22" selection-start="6415" selection-end="6415" vertical-scroll-proportion="0.0" vertical-offset="1550" max-vertical-offset="180180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="13" selection-start="2081" selection-end="2081" vertical-scroll-proportion="-12.384615" vertical-offset="200" max-vertical-offset="88668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4620" column="20" selection-start="174510" selection-end="174514" vertical-scroll-proportion="-6.9772725" vertical-offset="82853" max-vertical-offset="100566">
+          <folding>
+            <element signature="e#0#210773#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6897#6936#0" expanded="false" />
+            <element signature="e#13619#13630#0" expanded="false" />
+            <element signature="e#26095#26096#0" expanded="false" />
+            <element signature="e#26127#26128#0" expanded="false" />
+            <element signature="e#61375#61376#0" expanded="false" />
+            <element signature="e#61424#61425#0" expanded="false" />
+            <element signature="e#68344#68345#0" expanded="false" />
+            <element signature="e#68373#68374#0" expanded="false" />
+            <element signature="e#120218#120219#0" expanded="false" />
+            <element signature="e#120252#120253#0" expanded="false" />
+            <element signature="e#131265#131292#0" expanded="false" />
+            <element signature="e#134157#136544#0" expanded="false" />
+            <element signature="e#136533#136534#0" expanded="false" />
+            <element signature="e#148118#148119#0" expanded="false" />
+            <element signature="e#148179#148180#0" expanded="false" />
+            <element signature="e#158682#158714#0" expanded="false" />
+            <element signature="e#183814#184077#0" expanded="false" />
+            <element signature="e#184062#184063#0" expanded="false" />
+            <element signature="e#188787#188788#0" expanded="false" />
+            <element signature="e#188837#188838#0" expanded="false" />
+            <element signature="e#189572#189583#0" expanded="false" />
+            <element signature="e#204276#204288#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="36" selection-start="0" selection-end="9948" vertical-scroll-proportion="-7.0" vertical-offset="1096" max-vertical-offset="5958">
+          <folding>
+            <element signature="e#0#9948#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2089#2116#0" expanded="false" />
+            <element signature="e#4072#4073#0" expanded="false" />
+            <element signature="e#4104#4105#0" expanded="false" />
+            <element signature="e#5207#5208#0" expanded="false" />
+            <element signature="e#5244#5245#0" expanded="false" />
+            <element signature="e#9496#9523#0" expanded="false" />
+            <element signature="e#9848#9849#0" expanded="false" />
+            <element signature="e#9905#9906#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/ComponentEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="16" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/event/MouseWheelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="17" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding>
+            <element signature="e#0#1375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/Icon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="17" selection-start="410" selection-end="414" vertical-scroll-proportion="0.22360249" vertical-offset="0" max-vertical-offset="966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseMotionEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/event/TreeSelectionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="17" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding>
+            <element signature="e#0#942#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JTreeEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="1" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JComponentLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeExpansionEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/KeyEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="49" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JLabelLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/TreeWillExpandEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="1" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculatorJava2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1710">
+          <folding>
+            <element signature="e#0#2946#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/salaryincrease/SalaryIncreaseCalculatorJava8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="21" selection-start="2019" selection-end="2019" vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="1260">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/event/ChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="17" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding>
+            <element signature="e#0#594#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/event/ItemListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="17" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="22" selection-start="2079" selection-end="2079" vertical-scroll-proportion="-12.076923" vertical-offset="280" max-vertical-offset="54522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JToggleButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="44" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-12.076923" vertical-offset="514" max-vertical-offset="7092">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JCheckBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="13" selection-start="2216" selection-end="2216" vertical-scroll-proportion="-12.384615" vertical-offset="488" max-vertical-offset="5724">
+          <folding>
+            <element signature="e#0#10591#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6520#6521#0" expanded="false" />
+            <element signature="e#6547#6548#0" expanded="false" />
+            <element signature="e#7148#7149#0" expanded="false" />
+            <element signature="e#7180#7181#0" expanded="false" />
+            <element signature="e#10490#10491#0" expanded="false" />
+            <element signature="e#10545#10546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/AbstractButtonEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="874" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/MouseEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/event/PopupMenuListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="337" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="e#0#865#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/PopupMenuEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1777" selection-end="1777" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
+          <folding>
+            <element signature="e#1022#1170#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1296#1446#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1561#1700#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="11" selection-start="5819" selection-end="5819" vertical-scroll-proportion="-12.076923" vertical-offset="2476" max-vertical-offset="42300">
+          <folding>
+            <element signature="e#0#87887#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#8550#8551#0" expanded="false" />
+            <element signature="e#8582#8583#0" expanded="false" />
+            <element signature="e#9841#9842#0" expanded="false" />
+            <element signature="e#9873#9874#0" expanded="false" />
+            <element signature="e#11875#11876#0" expanded="false" />
+            <element signature="e#11921#11922#0" expanded="false" />
+            <element signature="e#13093#13094#0" expanded="false" />
+            <element signature="e#13126#13127#0" expanded="false" />
+            <element signature="e#14107#14108#0" expanded="false" />
+            <element signature="e#14145#14146#0" expanded="false" />
+            <element signature="e#15565#15566#0" expanded="false" />
+            <element signature="e#15596#15597#0" expanded="false" />
+            <element signature="e#16793#16794#0" expanded="false" />
+            <element signature="e#16822#16823#0" expanded="false" />
+            <element signature="e#22297#22298#0" expanded="false" />
+            <element signature="e#22341#22342#0" expanded="false" />
+            <element signature="e#34248#34249#0" expanded="false" />
+            <element signature="e#34288#34289#0" expanded="false" />
+            <element signature="e#34550#34551#0" expanded="false" />
+            <element signature="e#34586#34587#0" expanded="false" />
+            <element signature="e#38292#38293#0" expanded="false" />
+            <element signature="e#38321#38322#0" expanded="false" />
+            <element signature="e#49737#49738#0" expanded="false" />
+            <element signature="e#49783#49784#0" expanded="false" />
+            <element signature="e#49983#49984#0" expanded="false" />
+            <element signature="e#50025#50026#0" expanded="false" />
+            <element signature="e#64120#64121#0" expanded="false" />
+            <element signature="e#64175#64176#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JComboBoxLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="11" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="13" selection-start="9220" selection-end="9220" vertical-scroll-proportion="-12.384615" vertical-offset="2630" max-vertical-offset="170262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/JComponentEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/event/CaretListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="17" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding>
+            <element signature="e#0#581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/awt/event/InputMethodListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="17" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <folding>
+            <element signature="e#0#1018#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/text/JTextComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="294" column="22" selection-start="11490" selection-end="11490" vertical-scroll-proportion="-12.384615" vertical-offset="3674" max-vertical-offset="88758">
+          <folding>
+            <element signature="e#0#190722#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#17596#17597#0" expanded="false" />
+            <element signature="e#17624#17625#0" expanded="false" />
+            <element signature="e#19704#19705#0" expanded="false" />
+            <element signature="e#19733#19734#0" expanded="false" />
+            <element signature="e#20048#20049#0" expanded="false" />
+            <element signature="e#20089#20090#0" expanded="false" />
+            <element signature="e#20527#20528#0" expanded="false" />
+            <element signature="e#20566#20567#0" expanded="false" />
+            <element signature="e#20744#20745#0" expanded="false" />
+            <element signature="e#20772#20773#0" expanded="false" />
+            <element signature="e#21752#21753#0" expanded="false" />
+            <element signature="e#21786#21787#0" expanded="false" />
+            <element signature="e#25363#25364#0" expanded="false" />
+            <element signature="e#25397#25398#0" expanded="false" />
+            <element signature="e#27057#27058#0" expanded="false" />
+            <element signature="e#27088#27089#0" expanded="false" />
+            <element signature="e#36152#36153#0" expanded="false" />
+            <element signature="e#36187#36188#0" expanded="false" />
+            <element signature="e#39151#39152#0" expanded="false" />
+            <element signature="e#39180#39181#0" expanded="false" />
+            <element signature="e#44194#44210#0" expanded="false" />
+            <element signature="e#46330#46331#0" expanded="false" />
+            <element signature="e#46363#46364#0" expanded="false" />
+            <element signature="e#47111#47112#0" expanded="false" />
+            <element signature="e#47148#47149#0" expanded="false" />
+            <element signature="e#47950#47951#0" expanded="false" />
+            <element signature="e#47990#47991#0" expanded="false" />
+            <element signature="e#48813#48814#0" expanded="false" />
+            <element signature="e#48853#48854#0" expanded="false" />
+            <element signature="e#58803#58804#0" expanded="false" />
+            <element signature="e#58842#58843#0" expanded="false" />
+            <element signature="e#65301#65302#0" expanded="false" />
+            <element signature="e#65332#65333#0" expanded="false" />
+            <element signature="e#86612#87012#0" expanded="false" />
+            <element signature="e#86997#86998#0" expanded="false" />
+            <element signature="e#87091#87099#0" expanded="false" />
+            <element signature="e#87165#90158#0" expanded="false" />
+            <element signature="e#87674#88120#0" expanded="false" />
+            <element signature="e#88085#88086#0" expanded="false" />
+            <element signature="e#89172#89390#0" expanded="false" />
+            <element signature="e#89351#89352#0" expanded="false" />
+            <element signature="e#90143#90144#0" expanded="false" />
+            <element signature="e#97021#97605#0" expanded="false" />
+            <element signature="e#97590#97591#0" expanded="false" />
+            <element signature="e#99385#99605#0" expanded="false" />
+            <element signature="e#99586#99587#0" expanded="false" />
+            <element signature="e#100254#100474#0" expanded="false" />
+            <element signature="e#100455#100456#0" expanded="false" />
+            <element signature="e#101124#101344#0" expanded="false" />
+            <element signature="e#101325#101326#0" expanded="false" />
+            <element signature="e#102581#102582#0" expanded="false" />
+            <element signature="e#102631#102632#0" expanded="false" />
+            <element signature="e#147134#147135#0" expanded="false" />
+            <element signature="e#147170#147171#0" expanded="false" />
+            <element signature="e#147328#147329#0" expanded="false" />
+            <element signature="e#147363#147364#0" expanded="false" />
+            <element signature="e#155527#155528#0" expanded="false" />
+            <element signature="e#155568#155569#0" expanded="false" />
+            <element signature="e#155603#155604#0" expanded="false" />
+            <element signature="e#155636#155637#0" expanded="false" />
+            <element signature="e#159702#159703#0" expanded="false" />
+            <element signature="e#159739#159740#0" expanded="false" />
+            <element signature="e#159794#159795#0" expanded="false" />
+            <element signature="e#159838#159839#0" expanded="false" />
+            <element signature="e#167345#167346#0" expanded="false" />
+            <element signature="e#167379#167380#0" expanded="false" />
+            <element signature="e#167417#167418#0" expanded="false" />
+            <element signature="e#167452#167453#0" expanded="false" />
+            <element signature="e#187255#187495#0" expanded="false" />
+            <element signature="e#187484#187485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/swing/JTextArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="41" selection-start="0" selection-end="27760" vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="13968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTableLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextAreaLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="39" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/mixin/InputMethodEventProducerMixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="9" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTextFieldLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="1" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <folding>
+            <element signature="method#JTextFieldLambda#0;class#JTextFieldLambda#0" expanded="false" />
+            <element signature="method#JTextFieldLambda#1;class#JTextFieldLambda#0" expanded="false" />
+            <element signature="method#JTextFieldLambda#2;class#JTextFieldLambda#0" expanded="false" />
+            <element signature="method#JTextFieldLambda#3;class#JTextFieldLambda#0" expanded="false" />
+            <element signature="method#JTextFieldLambda#4;class#JTextFieldLambda#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JTreeLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="5" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/samples/componentpallet/ComponentPallet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="22" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="1908">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JButtonLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/javaspecialists/tjsn/gui/lambda/JCheckBoxLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.6322314" vertical-offset="0" max-vertical-offset="968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Apache2 - JavaSpecialists</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>javaspecialists-awt-event-mixins</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: high-scale-lib:high-scale-lib:1.1.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

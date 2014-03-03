@@ -18,33 +18,33 @@
 
 package eu.javaspecialists.tjsn.gui.lambda.mixin;
 
-import java.awt.event.*;
+import javax.swing.event.*;
 import java.util.function.*;
 
-public interface KeyEventProducerMixin {
-    default void addKeyTypedListener(Consumer<KeyEvent> c) {
-        addKeyListener(new KeyAdapter() {
-            public void keyTyped(KeyEvent e) {
+public interface TreeExpansionEventProducerMixin {
+    default void addTreeExpandedListener(Consumer<TreeExpansionEvent> c) {
+        addTreeExpansionListener(new TreeExpansionAdapter() {
+            public void treeExpanded(TreeExpansionEvent e) {
                 c.accept(e);
             }
         });
     }
 
-    default void addKeyPressedListener(Consumer<KeyEvent> c) {
-        addKeyListener(new KeyAdapter() {
-            public void keyPressed(KeyEvent e) {
+    default void addTreeCollapsedListener(Consumer<TreeExpansionEvent> c) {
+        addTreeExpansionListener(new TreeExpansionAdapter() {
+            public void treeCollapsed(TreeExpansionEvent e) {
                 c.accept(e);
             }
         });
     }
 
-    default void addKeyReleasedListener(Consumer<KeyEvent> c) {
-        addKeyListener(new KeyAdapter() {
-            public void keyReleased(KeyEvent e) {
-                c.accept(e);
-            }
-        });
-    }
+    public void addTreeExpansionListener(TreeExpansionListener listener);
 
-    public void addKeyListener(KeyListener listener);
+    interface TreeExpansionAdapter extends TreeExpansionListener {
+        default void treeExpanded(TreeExpansionEvent e) {
+        }
+
+        default void treeCollapsed(TreeExpansionEvent e) {
+        }
+    }
 }

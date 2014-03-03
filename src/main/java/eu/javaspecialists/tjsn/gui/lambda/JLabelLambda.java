@@ -22,24 +22,27 @@ import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
+public class JLabelLambda extends JLabel implements JComponentEventProducerMixin {
+    public JLabelLambda(String text, Icon icon, int horizontalAlignment) {
+        super(text, icon, horizontalAlignment);
     }
 
-    public JButtonLambda(Icon icon) {
-        super(icon);
+    public JLabelLambda(String text, int horizontalAlignment) {
+        super(text, horizontalAlignment);
     }
 
-    public JButtonLambda(String text) {
+    public JLabelLambda(String text) {
         super(text);
     }
 
-    public JButtonLambda(Action a) {
-        super(a);
+    public JLabelLambda(Icon image, int horizontalAlignment) {
+        super(image, horizontalAlignment);
     }
 
-    public JButtonLambda(String text, Icon icon) {
-        super(text, icon);
+    public JLabelLambda(Icon image) {
+        super(image);
+    }
+
+    public JLabelLambda() {
     }
 }

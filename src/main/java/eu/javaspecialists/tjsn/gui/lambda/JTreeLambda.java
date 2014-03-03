@@ -21,25 +21,36 @@ package eu.javaspecialists.tjsn.gui.lambda;
 import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
+import javax.swing.tree.*;
+import java.util.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
+public class JTreeLambda extends JTree implements
+        JComponentEventProducerMixin,
+        JTreeEventProducerMixin {
+    public JTreeLambda() {
     }
 
-    public JButtonLambda(Icon icon) {
-        super(icon);
+    public JTreeLambda(Object[] value) {
+        super(value);
     }
 
-    public JButtonLambda(String text) {
-        super(text);
+    public JTreeLambda(Vector<?> value) {
+        super(value);
     }
 
-    public JButtonLambda(Action a) {
-        super(a);
+    public JTreeLambda(Hashtable<?, ?> value) {
+        super(value);
     }
 
-    public JButtonLambda(String text, Icon icon) {
-        super(text, icon);
+    public JTreeLambda(TreeNode root) {
+        super(root);
+    }
+
+    public JTreeLambda(TreeNode root, boolean asksAllowsChildren) {
+        super(root, asksAllowsChildren);
+    }
+
+    public JTreeLambda(TreeModel newModel) {
+        super(newModel);
     }
 }

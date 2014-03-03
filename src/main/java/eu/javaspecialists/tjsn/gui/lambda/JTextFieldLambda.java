@@ -21,25 +21,26 @@ package eu.javaspecialists.tjsn.gui.lambda;
 import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
+import javax.swing.text.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
+public class JTextFieldLambda extends JTextField implements
+        JComponentEventProducerMixin {
+    public JTextFieldLambda() {
     }
 
-    public JButtonLambda(Icon icon) {
-        super(icon);
-    }
-
-    public JButtonLambda(String text) {
+    public JTextFieldLambda(String text) {
         super(text);
     }
 
-    public JButtonLambda(Action a) {
-        super(a);
+    public JTextFieldLambda(int columns) {
+        super(columns);
     }
 
-    public JButtonLambda(String text, Icon icon) {
-        super(text, icon);
+    public JTextFieldLambda(String text, int columns) {
+        super(text, columns);
+    }
+
+    public JTextFieldLambda(Document doc, String text, int columns) {
+        super(doc, text, columns);
     }
 }
