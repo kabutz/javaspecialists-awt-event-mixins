@@ -16,42 +16,29 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda;
-
-import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
+package eu.javaspecialists.tjsn.gui.lambda.mixin;
 
 import javax.swing.*;
+import javax.swing.text.*;
 
-public class JCheckBoxLambda extends JCheckBox implements
-        JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JCheckBoxLambda() {
+public class JTextFieldLambda extends JTextField implements
+        JComponentEventProducerMixin {
+    public JTextFieldLambda() {
     }
 
-    public JCheckBoxLambda(Icon icon) {
-        super(icon);
-    }
-
-    public JCheckBoxLambda(Icon icon, boolean selected) {
-        super(icon, selected);
-    }
-
-    public JCheckBoxLambda(String text) {
+    public JTextFieldLambda(String text) {
         super(text);
     }
 
-    public JCheckBoxLambda(Action a) {
-        super(a);
+    public JTextFieldLambda(int columns) {
+        super(columns);
     }
 
-    public JCheckBoxLambda(String text, boolean selected) {
-        super(text, selected);
+    public JTextFieldLambda(String text, int columns) {
+        super(text, columns);
     }
 
-    public JCheckBoxLambda(String text, Icon icon) {
-        super(text, icon);
-    }
-
-    public JCheckBoxLambda(String text, Icon icon, boolean selected) {
-        super(text, icon, selected);
+    public JTextFieldLambda(Document doc, String text, int columns) {
+        super(doc, text, columns);
     }
 }

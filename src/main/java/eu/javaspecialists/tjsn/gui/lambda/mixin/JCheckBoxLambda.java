@@ -16,40 +16,40 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda;
-
-import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
+package eu.javaspecialists.tjsn.gui.lambda.mixin;
 
 import javax.swing.*;
-import javax.swing.table.*;
-import java.util.*;
 
-public class JTableLambda extends JTable implements
-        JComponentEventProducerMixin {
-    public JTableLambda() {
+public class JCheckBoxLambda extends JCheckBox implements
+        JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
+    public JCheckBoxLambda() {
     }
 
-    public JTableLambda(TableModel dm) {
-        super(dm);
+    public JCheckBoxLambda(Icon icon) {
+        super(icon);
     }
 
-    public JTableLambda(TableModel dm, TableColumnModel cm) {
-        super(dm, cm);
+    public JCheckBoxLambda(Icon icon, boolean selected) {
+        super(icon, selected);
     }
 
-    public JTableLambda(TableModel dm, TableColumnModel cm, ListSelectionModel sm) {
-        super(dm, cm, sm);
+    public JCheckBoxLambda(String text) {
+        super(text);
     }
 
-    public JTableLambda(int numRows, int numColumns) {
-        super(numRows, numColumns);
+    public JCheckBoxLambda(Action a) {
+        super(a);
     }
 
-    public JTableLambda(Vector rowData, Vector columnNames) {
-        super(rowData, columnNames);
+    public JCheckBoxLambda(String text, boolean selected) {
+        super(text, selected);
     }
 
-    public JTableLambda(Object[][] rowData, Object[] columnNames) {
-        super(rowData, columnNames);
+    public JCheckBoxLambda(String text, Icon icon) {
+        super(text, icon);
+    }
+
+    public JCheckBoxLambda(String text, Icon icon, boolean selected) {
+        super(text, icon, selected);
     }
 }

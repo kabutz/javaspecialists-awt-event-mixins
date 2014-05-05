@@ -16,33 +16,33 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda;
-
-import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
+package eu.javaspecialists.tjsn.gui.lambda.mixin;
 
 import javax.swing.*;
+import javax.swing.text.*;
 
-public class JLabelLambda extends JLabel implements JComponentEventProducerMixin {
-    public JLabelLambda(String text, Icon icon, int horizontalAlignment) {
-        super(text, icon, horizontalAlignment);
+public class JTextAreaLambda extends JTextArea implements
+        JComponentEventProducerMixin {
+    public JTextAreaLambda() {
     }
 
-    public JLabelLambda(String text, int horizontalAlignment) {
-        super(text, horizontalAlignment);
-    }
-
-    public JLabelLambda(String text) {
+    public JTextAreaLambda(String text) {
         super(text);
     }
 
-    public JLabelLambda(Icon image, int horizontalAlignment) {
-        super(image, horizontalAlignment);
+    public JTextAreaLambda(int rows, int columns) {
+        super(rows, columns);
     }
 
-    public JLabelLambda(Icon image) {
-        super(image);
+    public JTextAreaLambda(String text, int rows, int columns) {
+        super(text, rows, columns);
     }
 
-    public JLabelLambda() {
+    public JTextAreaLambda(Document doc) {
+        super(doc);
+    }
+
+    public JTextAreaLambda(Document doc, String text, int rows, int columns) {
+        super(doc, text, rows, columns);
     }
 }

@@ -16,30 +16,38 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda;
-
-import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
+package eu.javaspecialists.tjsn.gui.lambda.mixin;
 
 import javax.swing.*;
+import javax.swing.table.*;
+import java.util.*;
 
-public class JButtonLambda extends JButton
-        implements JComponentEventProducerMixin, AbstractButtonEventProducerMixin {
-    public JButtonLambda() {
+public class JTableLambda extends JTable implements
+        JComponentEventProducerMixin {
+    public JTableLambda() {
     }
 
-    public JButtonLambda(Icon icon) {
-        super(icon);
+    public JTableLambda(TableModel dm) {
+        super(dm);
     }
 
-    public JButtonLambda(String text) {
-        super(text);
+    public JTableLambda(TableModel dm, TableColumnModel cm) {
+        super(dm, cm);
     }
 
-    public JButtonLambda(Action a) {
-        super(a);
+    public JTableLambda(TableModel dm, TableColumnModel cm, ListSelectionModel sm) {
+        super(dm, cm, sm);
     }
 
-    public JButtonLambda(String text, Icon icon) {
-        super(text, icon);
+    public JTableLambda(int numRows, int numColumns) {
+        super(numRows, numColumns);
+    }
+
+    public JTableLambda(Vector rowData, Vector columnNames) {
+        super(rowData, columnNames);
+    }
+
+    public JTableLambda(Object[][] rowData, Object[] columnNames) {
+        super(rowData, columnNames);
     }
 }
