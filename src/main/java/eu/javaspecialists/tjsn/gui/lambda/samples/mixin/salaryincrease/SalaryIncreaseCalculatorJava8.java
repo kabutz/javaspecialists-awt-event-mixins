@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda.samples.salaryincrease;
+package eu.javaspecialists.tjsn.gui.lambda.samples.mixin.salaryincrease;
 
-import eu.javaspecialists.tjsn.gui.lambda.*;
+import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -41,7 +41,7 @@ public class SalaryIncreaseCalculatorJava8 extends JFrame {
 
     private void initialize() {
         salaryIncreaser.addFocusGainedListener((e) ->
-                System.out.println("Almost there!")
+                        System.out.println("Almost there!")
         );
 
         salaryIncreaser.addKeyPressedListener((e) -> {
@@ -50,11 +50,11 @@ public class SalaryIncreaseCalculatorJava8 extends JFrame {
         });
 
         salaryIncreaser.addMouseEnteredListener((e) ->
-                shuffleSalaryButton()
+                        shuffleSalaryButton()
         );
 
         salaryIncreaser.addActionListener((e) ->
-                System.out.println("You have just doubled your salary!")
+                        System.out.println("You have just doubled your salary!")
         );
     }
 

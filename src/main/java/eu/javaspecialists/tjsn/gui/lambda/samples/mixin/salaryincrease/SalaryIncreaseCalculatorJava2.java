@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda.samples.salaryincrease;
+package eu.javaspecialists.tjsn.gui.lambda.samples.mixin.salaryincrease;
 
 import javax.swing.*;
 import java.awt.*;

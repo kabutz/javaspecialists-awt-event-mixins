@@ -16,9 +16,8 @@
  * limitations under the License.
  */
 
-package eu.javaspecialists.tjsn.gui.lambda.samples.componentpallet;
+package eu.javaspecialists.tjsn.gui.lambda.samples.mixin.componentpallet;
 
-import eu.javaspecialists.tjsn.gui.lambda.*;
 import eu.javaspecialists.tjsn.gui.lambda.mixin.*;
 
 import javax.swing.*;
