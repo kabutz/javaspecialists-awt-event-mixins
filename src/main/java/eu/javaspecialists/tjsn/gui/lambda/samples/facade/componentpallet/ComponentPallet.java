@@ -72,30 +72,30 @@ public class ComponentPallet extends JFrame {
     }
 
     private void addButtonListeners(AbstractButton c) {
-        c.addActionListener((e) -> show(c, "action happened", e));
-        c.addChangeListener((e) -> show(c, "change happened", e));
-        c.addItemListener((e) -> show(c, "item happened", e));
+        c.addActionListener(e -> show(c, "action happened", e));
+        c.addChangeListener(e -> show(c, "change happened", e));
+        c.addItemListener(e -> show(c, "item happened", e));
     }
 
     private void addTreeListeners(JTree c) {
-        c.addTreeSelectionListener((e) -> show(c, "item selected", e));
-        c.addTreeWillExpandListener(TreeWillExpandListeners.forTreeWillExpand((e) -> show(c, "tree /will/ expand", e)));
-        c.addTreeWillExpandListener(TreeWillExpandListeners.forTreeWillCollapse((e) -> show(c, "tree /will/ collapse", e)));
-        c.addTreeExpansionListener(TreeExpansionListeners.forTreeExpanded((e) -> show(c, "tree expanded", e)));
-        c.addTreeExpansionListener(TreeExpansionListeners.forTreeCollapsed((e) -> show(c, "tree collapsed", e)));
+        c.addTreeSelectionListener(e -> show(c, "item selected", e));
+        c.addTreeWillExpandListener(TreeWillExpandListeners.forTreeWillExpand(e -> show(c, "tree /will/ expand", e)));
+        c.addTreeWillExpandListener(TreeWillExpandListeners.forTreeWillCollapse(e -> show(c, "tree /will/ collapse", e)));
+        c.addTreeExpansionListener(TreeExpansionListeners.forTreeExpanded(e -> show(c, "tree expanded", e)));
+        c.addTreeExpansionListener(TreeExpansionListeners.forTreeCollapsed(e -> show(c, "tree collapsed", e)));
     }
 
     private void addListeners(JComponent c) {
-        c.addFocusListener(FocusListeners.forFocusGainedListener((e) -> show(c, "gained focus", e)));
-        c.addFocusListener(FocusListeners.forFocusLostListener((e) -> show(c, "lost focus", e)));
-        c.addMouseListener(MouseListeners.forMouseClicked((e) -> show(c, "mouse clicked", e)));
-        c.addMouseListener(MouseListeners.forMouseEntered((e) -> show(c, "mouse entered", e)));
-        c.addMouseListener(MouseListeners.forMouseExited((e) -> show(c, "mouse exited", e)));
-        c.addMouseListener(MouseListeners.forMousePressed((e) -> show(c, "mouse pressed", e)));
-        c.addMouseListener(MouseListeners.forMouseReleased((e) -> show(c, "mouse released", e)));
-        c.addKeyListener(KeyListeners.forKeyPressedListener((e) -> show(c, "key pressed", e)));
-        c.addKeyListener(KeyListeners.forKeyReleasedListener((e) -> show(c, "key released", e)));
-        c.addKeyListener(KeyListeners.forKeyTypedListener((e) -> show(c, "key typed", e)));
+        c.addFocusListener(FocusListeners.forFocusGainedListener(e -> show(c, "gained focus", e)));
+        c.addFocusListener(FocusListeners.forFocusLostListener(e -> show(c, "lost focus", e)));
+        c.addMouseListener(MouseListeners.forMouseClicked(e -> show(c, "mouse clicked", e)));
+        c.addMouseListener(MouseListeners.forMouseEntered(e -> show(c, "mouse entered", e)));
+        c.addMouseListener(MouseListeners.forMouseExited(e -> show(c, "mouse exited", e)));
+        c.addMouseListener(MouseListeners.forMousePressed(e -> show(c, "mouse pressed", e)));
+        c.addMouseListener(MouseListeners.forMouseReleased(e -> show(c, "mouse released", e)));
+        c.addKeyListener(KeyListeners.forKeyPressedListener(e -> show(c, "key pressed", e)));
+        c.addKeyListener(KeyListeners.forKeyReleasedListener(e -> show(c, "key released", e)));
+        c.addKeyListener(KeyListeners.forKeyTypedListener(e -> show(c, "key typed", e)));
     }
 
     private void show(Object component, String what, Object event) {

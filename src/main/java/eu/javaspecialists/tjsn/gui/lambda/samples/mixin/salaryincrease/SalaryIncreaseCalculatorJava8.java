@@ -40,20 +40,20 @@ public class SalaryIncreaseCalculatorJava8 extends JFrame {
     }
 
     private void initialize() {
-        salaryIncreaser.addFocusGainedListener((e) ->
+        salaryIncreaser.addFocusGainedListener(e ->
                         System.out.println("Almost there!")
         );
 
-        salaryIncreaser.addKeyPressedListener((e) -> {
+        salaryIncreaser.addKeyPressedListener(e -> {
             e.consume();
             System.out.println("Not quite!");
         });
 
-        salaryIncreaser.addMouseEnteredListener((e) ->
+        salaryIncreaser.addMouseEnteredListener(e ->
                         shuffleSalaryButton()
         );
 
-        salaryIncreaser.addActionListener((e) ->
+        salaryIncreaser.addActionListener(e ->
                         System.out.println("You have just doubled your salary!")
         );
     }

@@ -72,30 +72,30 @@ public class ComponentPallet extends JFrame {
     }
 
     private void addButtonListeners(AbstractButtonEventProducerMixin c) {
-        c.addActionListener((e) -> show(c, "action happened", e));
-        c.addChangeListener((e) -> show(c, "change happened", e));
-        c.addItemListener((e) -> show(c, "item happened", e));
+        c.addActionListener(e -> show(c, "action happened", e));
+        c.addChangeListener(e -> show(c, "change happened", e));
+        c.addItemListener(e -> show(c, "item happened", e));
     }
 
     private void addTreeListeners(JTreeEventProducerMixin c) {
-        c.addTreeSelectionListener((e) -> show(c, "item selected", e));
-        c.addTreeWillExpandListener((e) -> show(c, "tree /will/ expand", e));
-        c.addTreeWillCollapseListener((e) -> show(c, "tree /will/ collapse", e));
-        c.addTreeExpandedListener((e) -> show(c, "tree expanded", e));
-        c.addTreeCollapsedListener((e) -> show(c, "tree collapsed", e));
+        c.addTreeSelectionListener(e -> show(c, "item selected", e));
+        c.addTreeWillExpandListener(e -> show(c, "tree /will/ expand", e));
+        c.addTreeWillCollapseListener(e -> show(c, "tree /will/ collapse", e));
+        c.addTreeExpandedListener(e -> show(c, "tree expanded", e));
+        c.addTreeCollapsedListener(e -> show(c, "tree collapsed", e));
     }
 
     private void addListeners(JComponentEventProducerMixin c) {
-        c.addFocusGainedListener((e) -> show(c, "gained focus", e));
-        c.addFocusLostListener((e) -> show(c, "lost focus", e));
-        c.addMouseClickedListener((e) -> show(c, "mouse clicked", e));
-        c.addMouseEnteredListener((e) -> show(c, "mouse entered", e));
-        c.addMouseExitedListener((e) -> show(c, "mouse exited", e));
-        c.addMousePressedListener((e) -> show(c, "mouse pressed", e));
-        c.addMouseReleasedListener((e) -> show(c, "mouse released", e));
-        c.addKeyPressedListener((e) -> show(c, "key pressed", e));
-        c.addKeyReleasedListener((e) -> show(c, "key released", e));
-        c.addKeyTypedListener((e) -> show(c, "key typed", e));
+        c.addFocusGainedListener(e -> show(c, "gained focus", e));
+        c.addFocusLostListener(e -> show(c, "lost focus", e));
+        c.addMouseClickedListener(e -> show(c, "mouse clicked", e));
+        c.addMouseEnteredListener(e -> show(c, "mouse entered", e));
+        c.addMouseExitedListener(e -> show(c, "mouse exited", e));
+        c.addMousePressedListener(e -> show(c, "mouse pressed", e));
+        c.addMouseReleasedListener(e -> show(c, "mouse released", e));
+        c.addKeyPressedListener(e -> show(c, "key pressed", e));
+        c.addKeyReleasedListener(e -> show(c, "key released", e));
+        c.addKeyTypedListener(e -> show(c, "key typed", e));
     }
 
     private void show(Object component, String what, Object event) {

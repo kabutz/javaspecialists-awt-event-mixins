@@ -1009,10 +1009,6 @@
         <inspection_tool class="VtlInterpolationsInspection" enabled="false" level="ERROR" enabled_by_default="false" />
         <inspection_tool class="VtlReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="VtlTypesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
-        <inspection_tool class="W3CssValidation" enabled="false" level="WARNING" enabled_by_default="false">
-          <option name="myCssVersion" value="css3" />
-          <option name="myIgnoreVendorSpecificProperties" value="false" />
-        </inspection_tool>
         <inspection_tool class="WSReferenceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="WeakerAccess" enabled="false" level="WARNING" enabled_by_default="false">
           <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="true" />
@@ -1218,6 +1214,10 @@
         <XML>
           <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
         </XML>
+        <codeStyleSettings language="ECMA Script Level 4">
+          <option name="WRAP_COMMENTS" value="true" />
+          <option name="PARENT_SETTINGS_INSTALLED" value="true" />
+        </codeStyleSettings>
         <codeStyleSettings language="Groovy">
           <option name="PARENT_SETTINGS_INSTALLED" value="true" />
         </codeStyleSettings>
@@ -1230,6 +1230,10 @@
           <indentOptions>
             <option name="CONTINUATION_INDENT_SIZE" value="8" />
           </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="TypeScript">
+          <option name="WRAP_COMMENTS" value="true" />
+          <option name="PARENT_SETTINGS_INSTALLED" value="true" />
         </codeStyleSettings>
         <codeStyleSettings language="XML">
           <indentOptions>
@@ -1291,4 +1295,3 @@
     </library>
   </component>
 </project>
-

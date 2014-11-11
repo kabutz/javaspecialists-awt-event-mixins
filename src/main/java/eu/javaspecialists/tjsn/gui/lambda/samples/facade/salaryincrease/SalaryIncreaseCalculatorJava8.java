@@ -18,13 +18,11 @@
 
 package eu.javaspecialists.tjsn.gui.lambda.samples.facade.salaryincrease;
 
+import eu.javaspecialists.tjsn.gui.lambda.facade.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
-
-import static eu.javaspecialists.tjsn.gui.lambda.facade.FocusListeners.*;
-import static eu.javaspecialists.tjsn.gui.lambda.facade.KeyListeners.*;
-import static eu.javaspecialists.tjsn.gui.lambda.facade.MouseListeners.*;
 
 public class SalaryIncreaseCalculatorJava8 extends JFrame {
     private final JButton salaryIncreaser;
@@ -42,20 +40,27 @@ public class SalaryIncreaseCalculatorJava8 extends JFrame {
     }
 
     private void initialize() {
-        salaryIncreaser.addFocusListener(forFocusGainedListener((e) ->
-                        System.out.println("Almost there!")
-        ));
+        salaryIncreaser.addFocusListener(
+                FocusListeners.forFocusGainedListener(
+                        e -> System.out.println("Almost there!"))
+        );
 
-        salaryIncreaser.addKeyListener(forKeyPressedListener((e) -> {
-            e.consume();
-            System.out.println("Not quite!");
-        }));
+        salaryIncreaser.addKeyListener(
+                KeyListeners.forKeyPressedListener(
+                        e -> {
+                            e.consume();
+                            System.out.println("Not quite!");
+                        }
+                )
+        );
 
-        salaryIncreaser.addMouseListener(forMouseEntered((e) ->
-                        shuffleSalaryButton()
-        ));
+        salaryIncreaser.addMouseListener(
+                MouseListeners.forMouseEntered(
+                        e -> shuffleSalaryButton()
+                )
+        );
 
-        salaryIncreaser.addActionListener((e) ->
+        salaryIncreaser.addActionListener(e ->
                         System.out.println("You have just doubled your salary!")
         );
     }
