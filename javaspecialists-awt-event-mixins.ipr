@@ -1215,7 +1215,6 @@
           <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
         </XML>
         <codeStyleSettings language="ECMA Script Level 4">
-          <option name="WRAP_COMMENTS" value="true" />
           <option name="PARENT_SETTINGS_INSTALLED" value="true" />
         </codeStyleSettings>
         <codeStyleSettings language="Groovy">
@@ -1232,7 +1231,6 @@
           </indentOptions>
         </codeStyleSettings>
         <codeStyleSettings language="TypeScript">
-          <option name="WRAP_COMMENTS" value="true" />
           <option name="PARENT_SETTINGS_INSTALLED" value="true" />
         </codeStyleSettings>
         <codeStyleSettings language="XML">
@@ -1295,3 +1293,4 @@
     </library>
   </component>
 </project>
+
